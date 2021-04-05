@@ -1,0 +1,35 @@
+ <!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title> JAVA SCRIPT EVENTS</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body id="body"onload="alert('onload event')">  
+        <h1 id="h1">welcome to javascript events</h1>
+        <select onchange="changecolor(this.value)">
+        <option value="red">red</option>
+        <option value="yellow">yellow</option>
+        <option value="pink">pink</option>
+      </select>
+      <button ondblclick="alert ( 'call ondblclick event')">ondouble click event</button>
+      <button onmouseover="alert('call onmouseover event')">on mouse over event</button>
+      <button onmouseout="alert('call onmouseout event')">on mouse <output></output> event</button>
+      <input type="text" name="" onkeydown="color(this.value)" value="">
+    </body>
+    <script type ="text/javascript">
+    function changecolor(color){
+        document.getElementById('body').style.backgroundColor=color;
+    }
+    function color(y) {
+        document.getElementById('h1').style.backgroundColor=y;
+   }
+
+</script>
+</html>
+
+    
+
